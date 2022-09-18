@@ -44,3 +44,4 @@ venv/
 set_env.ps1
 set_env.sh
 *.yaml
+deploy.ps1
