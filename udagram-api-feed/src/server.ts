@@ -10,7 +10,8 @@ import {V0_FEED_MODELS} from './controllers/v0/model.index';
 
 
 (async () => {
-  console.log({ environmentVariables: process.env })
+  const { POSTGRES_HOST, POSTGRES_DB, POSTGRES_USERNAME, POSTGRES_PASSWORD, JWT_SECRET, URL, AWS_BUCKET, AWS_PROFILE, AWS_REGION } = process.env
+  console.log({ POSTGRES_HOST, POSTGRES_DB, POSTGRES_USERNAME, POSTGRES_PASSWORD, JWT_SECRET, URL, AWS_BUCKET, AWS_PROFILE, AWS_REGION })
 
   await sequelize.addModels(V0_FEED_MODELS);
 
